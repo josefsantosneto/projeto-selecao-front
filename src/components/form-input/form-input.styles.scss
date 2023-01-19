@@ -1,0 +1,22 @@
+.label{
+    font-family: 'Roboto', sans-serif;
+    padding-right: 5px;
+   }
+
+   .form-input{
+    display: inline-block;
+    margin: 20px;
+    font-family:'Roboto', sans-serif;
+    margin-left: 50px;
+}
+
+button{
+    width: 100px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover{
+        background-color: gray;
+    }
+}

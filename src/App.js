@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route} from 'react-router-dom';
+import Navigation from './components/navigation.component';
+import Cadastro from './components/cadastro.component';
+import Edit from './components/edit.component';
+import useEmployees from './hooks/useEmployees';
+import EditEmployee from './components/editemployee.component';
+import CreatePost from './components/createPost/createPost.component';
 
-function App() {
+
+
+const App = () => {
+  const {employees} = useEmployees();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes>
+      <Route path='/' element={<Navigation/>}>
+        <Route index element={<Cadastro/>}/>
+        <Route path='/edit' element={<Edit employees={employees}/>}/>
+        <Route path='/employeeedit' element={<EditEmployee/>}/>
+        <Route path='/cadastsrocargo' element={<CreatePost/>}/>
+
+      </Route>
+      
+    </Routes>
+)
+
 }
 
 export default App;

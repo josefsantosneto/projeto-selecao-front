@@ -1,0 +1,48 @@
+.zebra {
+    font-family: 'Roboto', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    th, td {
+      padding: 0.25rem;
+      text-align: left;
+      border: 1px solid #ccc;
+    }
+    tbody tr:nth-child(odd) {
+      background: #eee;
+    }
+  }
+
+  h2{
+    font-family: 'Roboto', sans-serif;
+
+  }
+
+  a{
+    cursor: pointer;
+    text-decoration: none;
+    &:visited{
+      color:black;
+      
+    }
+  }
+
+  .click{
+    cursor: pointer;
+    padding-right: 2px;
+  }
+
+  .legenda{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+  }
+
+  .icon{
+    padding-right: 2px;
+    padding-left:10px;
+    &:active{
+      text-decoration: none;
+      color: black;
+    }
+  }
+  

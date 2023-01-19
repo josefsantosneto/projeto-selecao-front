@@ -1,0 +1,37 @@
+.logo{
+    width: 100px;
+    padding-right: 20px;
+    align-self: center;
+
+    
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    .title{
+        margin: auto;
+    }
+}
+
+
+.link{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: inherit;
+    margin-left: 20px;
+    
+
+    &:hover{
+        color: gray;
+
+    }
+}
+
+.links-box{
+    margin-right: 20px;
+    margin-top: 10px;
+}
